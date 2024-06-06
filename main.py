@@ -10,5 +10,8 @@ for i in range(4):
 # Calcula a média das notas
 media = sum(notas) / len(notas)
 
-# Exibe o resultado
-print(f"O aluno {nome} tem média {media:.2f}")
+# Determina se o aluno está aprovado ou reprovado
+if media >= 7:
+    print(f"O(a) aluno(a) {nome} está aprovado(a) com média {media:.1f}.")
+else:
+    print(f"O(a) aluno(a) {nome} está reprovado(a) com média {media:.1f}.")
